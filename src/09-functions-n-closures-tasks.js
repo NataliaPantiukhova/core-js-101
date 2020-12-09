@@ -42,11 +42,7 @@ const getComposition = (f, g) => (...args) => f(g(...args));
  *   power05(16) => 4
  *
  */
-function getPowerFunction(exponent) {
-  return function (x) {
-    return x ** exponent;
-  };
-}
+const getPowerFunction = (exponent) => (n) => n ** exponent;
 
 
 /**
